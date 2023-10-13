@@ -26,19 +26,39 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100%;
+    padding: 40px 20px;
 }
 
+.sp {
+    display: none;
+}
+
+.pc {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .sp {
+        display: block;
+    }
+    
+    .pc {
+        display: none;
+    }
+}
+
+/* Card Styles */
 .card {
     display: flex;
-    width: 900px;
-    height: 370px;
+    max-width: 900px;
+    height: auto;
     gap: 10px;
     background-color: var(--dark-des-blue);
     border-radius: 8px;
 }
 
 .card-content {
-    width: 450px;
+    width: 50%;
     padding: 30px 50px;
     background-color: var(--dark-des-blue);
     border-radius: 8px 0 8px 0;
@@ -73,7 +93,7 @@ body {
 }
 
 .card-content .card-content-bottom .column {
-    margin-right: 50px;
+    margin-right: 15%;
 }
 
 .card-content .card-content-bottom .column h3 {
@@ -94,7 +114,7 @@ body {
 
 .card-image {
     position: relative;
-    width: 450px;
+    width: 50%;
 }
 
 .card-image:before {
@@ -112,16 +132,20 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 0 8px 8px 0;
-
 }
 
-.sp {
-    display: none;
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
 }
 
-.attribution { 
+/* Footer Styles */
+.attribution {
+    padding: 10px;
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    color: var(--white); 
 }
       
 .attribution a { 
