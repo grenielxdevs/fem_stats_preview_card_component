@@ -38,6 +38,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        align-items: flex-start;
+        height: auto;
+    }
+
     .sp {
         display: block;
     }
@@ -137,6 +142,37 @@ body {
 @media screen and (max-width: 768px) {
     .card {
         flex-direction: column;
+        max-width: 100%;
+    }
+
+    .card-content {
+        width: 100%;
+        order: 2;
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+    }
+
+    .card-image {
+        width: 100%;
+        order: 1;
+    }
+
+    .card-image img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card-content .card-content-top h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }    
+
+    .card-content .card-content-bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-content .card-content-bottom .column {
+        margin: 0 0 20px;
     }
 }
 
