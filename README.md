@@ -4,7 +4,7 @@
 
 ## Welcome To grenielxdevs 👋
 
-Thank you for checking out my frontend mentor challenge #4 Stats preview card component
+Thank you for checking out my frontend mentor challenge #5 Stats preview card component
 
 ## Want to Collaborate?
 
